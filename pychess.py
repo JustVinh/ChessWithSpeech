@@ -164,13 +164,13 @@ while run:
                 elif ret != 1:
                     run = chess.multiplayer(win, ret[0], ret[1], prefs)
 
-            elif onln[0] < x < sum(onln[::2]) and onln[1] < y < sum(onln[1::2]):
-                sound.play_click(prefs)
-                ret = menus.onlinemenu(win)
-                if ret == 0:
-                    run = False
-                elif ret != 1:
-                    run = chess.online(win, ret[0], prefs, ret[1])
+            # elif onln[0] < x < sum(onln[::2]) and onln[1] < y < sum(onln[1::2]):
+            #     sound.play_click(prefs)
+            #     ret = menus.onlinemenu(win)
+            #     if ret == 0:
+            #         run = False
+            #     elif ret != 1:
+            #         run = chess.online(win, ret[0], prefs, ret[1])
 
             elif load[0] < x < sum(load[::2]) and load[1] < y < sum(load[1::2]):
                 sound.play_click(prefs)
